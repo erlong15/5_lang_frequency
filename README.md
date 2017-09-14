@@ -18,6 +18,13 @@
 python3 lang_frequency.py  <path_to_file>
 ```
 
+# Пример работы
+
+```bash
+[lucky@lucky 5_lang_frequency]$ python3 lang_frequency.py  README.md 
+[('в', 4), ('для', 3), ('org', 2), ('Как', 2), ('path_to_file', 1), ('3', 1), ('https', 1), ('анализатор', 1), ('Goals', 1), ('задача', 1)]
+```
+
 # Project Goals
 
 тренировочная задача для проекта - [DEVMAN.org](https://devman.org)
