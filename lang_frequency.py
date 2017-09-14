@@ -1,18 +1,16 @@
 import sys
 import re
-
+from collections import Counter
 
 def load_data(filepath):
-    words = {}
     with open(filepath, 'r') as f:
-        for line in f:
-            """
-            Read line by line to avoid memory issues
-            """
-            for word in re.findall('[\w\d]+', line):
-                words[word] = words[word] + 1 if word in words else 1
+        words = re.findall(r'\w+', f.read().lower())
+        return words
 
-        return sorted(words.items(), key=lambda x: x[1], reverse=True)
+def get_most_frequent_words(words, cnt):
+    return Counter(words).most_common(cnt)
 
 if __name__ == '__main__':
-    print(load_data(sys.argv[1])[:10])
+    words = load_data(sys.argv[1])
+    for word in get_most_frequent_words(words, 10):
+        print('%s: %s' % word)
