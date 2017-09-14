@@ -1,7 +1,23 @@
-# Frequency Analysis of Words
+# Частотный анализатор
 
-[TODO. There will be project description]
+скрипт используется для вывода первых 10 самых встречаемых слов в тексте. 
+
+
+# Как использовать
+
+Запускатьв консоли. Файл с текстом передается в качестве параметра. Вывод происходит в stdout. Можно подключать как библиотеку и передавать путь к файлу в функцию.
+
+
+# Как запустить
+
+Скрипт требует для своей работы установленного интерпретатора Python версии 3.5
+
+Запуск на Linux:
+
+```bash
+python3 lang_frequency.py  <path_to_file>
+```
 
 # Project Goals
 
-The code is written for educational purposes. Training course for web-developers - [DEVMAN.org](https://devman.org)
+тренировочная задача для проекта - [DEVMAN.org](https://devman.org)
