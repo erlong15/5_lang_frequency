@@ -18,6 +18,17 @@
 python3 lang_frequency.py  <path_to_file>
 ```
 
+Пример подключения в качестве библиотеки
+```
+
+from lang_frequency import load_data, get_most_frequent_words
+
+def example_of_use():
+    words = load_data('test.txt')
+    top_count = 2
+    words = get_most_frequent_words(words, top_count)
+```
+
 # Пример работы
 
 ```bash
